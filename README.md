@@ -1,3 +1,30 @@
+# mbta-demo-node-typescript-docker
+
+# 🚀 MBTA API TypeScript demo app, Showing how you can use Node with TypeScript. 🚀
+
+https://github.com/coding-to-music/mbta-demo-node-typescript-docker
+
+From / By https://github.com/selfinterest/mbta_demo
+
+
+## Environment variables:
+
+```java
+
+```
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/mbta-demo-node-typescript-docker.git
+git push -u origin main
+```
+
 MBTA API TypeScript demo app
 ===================
 This is a demonstration app showing how you can use Node with TypeScript.

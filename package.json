@@ -1,5 +1,5 @@
 {
-  "name": "mbta_demo_application",
+  "name": "mbta-demo-node-typescript-docker",
   "version": "1.0.0",
   "description": "",
   "main": "mbta.js",
@@ -8,6 +8,7 @@
     "start": "nodemon",
     "test-watch": "cross-env NODE_ENV=test mocha --recursive -r ts-node/register \"src/**/*.spec.ts\" --watch --watch-extensions ts",
     "test": "cross-env NODE_ENV=test nyc mocha --recursive --exit -r ts-node/register \"src/**/*.spec.ts\"",
+    "deploy": "git add . && git commit -m Build && git push",
     "build": "tsc",
     "postbuild": "cp -r src/assets dist"
   },
