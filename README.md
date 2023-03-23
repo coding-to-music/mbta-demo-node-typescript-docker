@@ -1,6 +1,6 @@
 # mbta-demo-node-typescript-docker
 
-# 🚀 MBTA API TypeScript demo app, Showing how you can use Node with TypeScript. 🚀
+# 🚀 MBTA API TypeScript demo app, Showing how you can use Node with TypeScript and Pug 🚀
 
 https://github.com/coding-to-music/mbta-demo-node-typescript-docker
 
@@ -55,3 +55,30 @@ $ docker run -p 8222:8222 -d mbta:latest
 TODO
 ---------
 Tests
+
+## npm run start
+
+Returns the next departures for 
+
+```
+// Coordinates of Watertown Square (approx.)
+const watertownCoords = {
+    latitude: "42.36546",
+    longitude: "-71.18564"
+}
+const routeNumber = "71";                   // the number of the Watertown -> Harvard route 
+
+// Read template from file and compile
+const template = pug.compile(fs.readFileSync(__dirname + "/assets/view.pug", {encoding: "utf8"}));
+```
+
+http://localhost:8222/
+
+```
+[
+
+Wednesday, March 22nd 2023, 11:07:00 pm,
+Wednesday, March 22nd 2023, 11:31:00 pm,
+Wednesday, March 22nd 2023, 11:53:00 pm,
+]
+```
